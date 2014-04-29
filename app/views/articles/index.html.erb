@@ -1,3 +1,4 @@
+<%= render 'users' %>
 <h1>Listing articles</h1>
  
 <table>
@@ -8,7 +9,7 @@
  
   <% @articles.each do |article| %>
     <tr>
-      <td><%= article.title %></td>
+      <td><%= link_to article.title, article %></td>
       <td><%= article.text %></td>
     </tr>
   <% end %>
