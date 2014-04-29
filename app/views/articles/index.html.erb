@@ -4,13 +4,9 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>Text</th>
   </tr>
  
   <% @articles.each do |article| %>
-    <tr>
-      <td><%= link_to article.title, article %></td>
-      <td><%= article.text %></td>
-    </tr>
+    <%= render 'articlewidget' %>
   <% end %>
 </table>
