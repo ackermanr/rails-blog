@@ -7,6 +7,6 @@
   </tr>
  
   <% @articles.each do |article| %>
-    <%= render 'articlewidget' %>
+    <%= render partial: 'articlewidget', :locals  => { :article => article } %>
   <% end %>
 </table>
