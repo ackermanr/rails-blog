@@ -1,3 +1,32 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {margin: 0; padding: 0; }
+body{
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+h1 {
+}
+
+$welcomeheight: 50px;
+
+#welcome {
+  margin: 0 0 5px 0;
+  background-color: black;
+  color:white;
+  height: $welcomeheight;
+}
+
+#welcome h1 {
+  line-height: $welcomeheight;
+  display: none;
+}
+
+#blog {
+  height: $welcomeheight;
+}
+
+#blog :first-child {
+  line-height: $welcomeheight;
+}
