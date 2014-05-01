@@ -4,4 +4,11 @@
 
 $(document).ready ->
   $("div#welcome h1").fadeIn 4000 
-  return
+
+  $("#email").click ->
+    if $("#hidden-form").hasClass("on")
+      $("#hidden-form").removeClass "on"
+      $("#hidden-form").slideUp "slow"
+    else
+      $("#hidden-form").slideDown "slow"
+      $("#hidden-form").addClass "on"

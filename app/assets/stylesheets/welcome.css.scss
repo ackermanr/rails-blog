@@ -23,6 +23,10 @@ $welcomeheight: 50px;
   display: none;
 }
 
+#about {
+  margin: 5px;
+}
+
 #about h1 {
   margin-bottom: 10px;
 }
@@ -35,6 +39,12 @@ $welcomeheight: 50px;
 
 #about-right ol{
   margin-left: 20px;
+}
+
+#about-left {
+  text-align: left;
+  width: 50%;
+  float: left;
 }
 
 #blog {
@@ -57,4 +67,25 @@ $welcomeheight: 50px;
 #resume div{
   width: 20%;
   margin: 10px 15% 10px 15%;
+}
+
+#email {
+  
+}
+
+#hidden-form {
+  display: none;
+  clear: both;
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 5px;
+  text-align: left;
+}
+
+#hidden-form form table tr {
+  margin: 0 5px;
+}
+
+#hidden-form form table tr :last-child {
+  margin-left: 15px;
 }
