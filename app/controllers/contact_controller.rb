@@ -4,6 +4,4 @@ class ContactController < ApplicationController
     @message = Message.new
   end
  
-  def create
-
 end
