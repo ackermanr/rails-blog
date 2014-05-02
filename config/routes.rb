@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   get 'welcome/index'
+  post "message" => "welcome#message", :as => "message", :via => :post
   get "sign_up" => "users#new", :as => "sign_up"
   get "log_in" => "sessions#new", :as => "log_in"
   get "log_out" => "sessions#destroy", :as => "log_out"
@@ -18,7 +19,6 @@ Rails.application.routes.draw do
   resources :articles do
     resources :comments
   end
-
   resources :users
 
   resources :sessions
