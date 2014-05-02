@@ -47,7 +47,30 @@ $welcomeheight: 50px;
   float: left;
 }
 
+#about-left img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#contact {
+  text-align: center;
+  background-color: #888;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 215px;
+}
+
 #blog {
+  display:none;
   height: $welcomeheight;
 }
 
@@ -77,13 +100,20 @@ $welcomeheight: 50px;
   display: none;
   clear: both;
   width: 50%;
-  margin-left: 10%;
   margin-top: 5px;
   text-align: left;
+  background-color: white;
+}
+
+#hidden-form form table {
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #hidden-form form table tr {
-  margin: 0 5px;
+  margin: 10px 5px;
 }
 
 #hidden-form form table tr :last-child {
