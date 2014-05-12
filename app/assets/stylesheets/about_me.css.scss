@@ -1,0 +1,40 @@
+// Place all the styles related to the about_me controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#home-button {
+
+  display: none;
+  cursor: pointer;
+  padding: 0 8px;
+  max-width: 70px;
+  height: 30px;
+  float:left;
+  line-height: 30px;
+
+  font-weight: bold;
+  margin-left: 210px;
+  background-color: #000;
+  color: #fff;
+
+  //The below adds the rounded corners on the bottom
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+}
+
+#container p{
+  margin-left: 10px;
+}
+
+#container ol, #container ul{
+  margin-left: 30px;
+}
+
+#resume h1 {
+  text-align: center;
+}
+#resume div {
+  margin: 10px 300px;
+}

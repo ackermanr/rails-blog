@@ -19,3 +19,49 @@
   y-index: 2;
   text-align: right;
 }
+
+body{
+  font-family: Helvetica, sans-serif;
+}
+
+#h-bar {
+  width: 100%;
+  height: 150px;
+  background-color: #000;
+  z-index: 1;
+  opacity: .6;
+}
+
+#v-bar {
+  width: 200px;
+  height: 100%;
+  background-color: #000;
+  z-index: 2;
+  opacity: .6;
+  position: absolute;
+  top: 0px;
+}
+
+#v-bar div {
+  color: #fff;
+  opacity: 1;
+  font-size: 7.9em;
+  font-weight: bold;
+  text-align: left;
+  background-repeat: repeat-y;
+}
+
+#h-bar div {
+  color: #fff;
+  font-size: 7.9em;
+  font-weight: bold;
+  text-align: left;
+}
+
+#container {
+  margin-left: 200px;
+  margin-top: 40px;
+  max-width: -moz-calc(100% - 200px);
+  max-width: -webkit-calc(100% - 200px);
+  max-width: calc(100% - 200px);
+}
