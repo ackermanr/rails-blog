@@ -1,0 +1,11 @@
+<%= render 'welcome/border' %>
+
+<%= link_to(root_path) do %>
+  <div id="home-button"> <- Home</div>
+<% end %>
+<div id="alt_container" class="container">
+  <%= render 'contactme' %>
+  <div id="hidden-form"><%= render 'contactform' %></div>
+
+  <%= render 'about_me/resume' %>
+</div>

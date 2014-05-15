@@ -1,3 +1,22 @@
 // Place all the styles related to the contact controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+table {
+  padding-left: 20px;
+}
+
+.container form {
+  margin-left: 60px;
+}
+
+td {
+  padding-top: 10px;
+}
+
+tr :last-child {
+  padding-left: 5px;
+}
+
+#hidden-form {
+  display: none;
+}
