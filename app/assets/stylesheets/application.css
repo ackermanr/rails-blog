@@ -58,10 +58,43 @@ body{
   text-align: left;
 }
 
-#container {
+.container {
   margin-left: 200px;
-  margin-top: 40px;
   max-width: -moz-calc(100% - 200px);
   max-width: -webkit-calc(100% - 200px);
   max-width: calc(100% - 200px);
+}
+
+#home-button {
+
+  display: none;
+  cursor: pointer;
+  padding: 0 8px;
+  max-width: 70px;
+  height: 30px;
+  float:left;
+  line-height: 30px;
+
+  font-weight: bold;
+  margin-left: 210px;
+  background-color: #000;
+  color: #fff;
+
+  //The below adds the rounded corners on the bottom
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+}
+
+#alt_container {
+  margin-top: 40px;
+}
+
+#alt_container p{
+  margin-left: 10px;
+}
+
+#alt_container ol, #alt_container ul{
+  margin-left: 30px;
 }
