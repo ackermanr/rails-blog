@@ -38,3 +38,5 @@ gem 'bcrypt', :require => 'bcrypt'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# SEO Helper
+gem 'meta-tags'
