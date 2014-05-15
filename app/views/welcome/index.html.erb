@@ -1,38 +1,11 @@
 <%= render 'border' %>
-<div id="container">
+<div class="container">
   <%= link_to('about') do %><div class="nav-square first"><h1>About Me</h1></div><% end %>
-  <div class="nav-square"><h1>Contact</h1></div>
+  <%= link_to('contact') do %><div class="nav-square"><h1>Contact</h1></div><% end %>
   <div class="nav-square bottom first"><h1>Portfolio</h1></div>
   <div class="nav-square bottom"><h1>Blog</h1></div>
 </div>
 
 <!--
-<div id="about">
-  <h1>About Me:</h1>
-  <div id="about-left">
-    <%= image_tag("about_me.jpg", :width => 200, :height => 266, :crop => :fill) %>
-    <div id="contact">
-      <div><p>To contact me, feel free to use any of the following:</p></div>
-      <table>
-        <tr>
           <td><%= image_tag("phone.png", :alt => "Call me") %></td>
-          <td>614-905-1015</td>
-        </tr>
-        <tr id="email">
-          <td><%= image_tag("email.png", :alt => "Email me") %></td>
-          <td>Click here to send me an email</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</div>
-  <div id="hidden-form"><%= render 'contactform' %></div>
-<div id="portfolio">
-  <h1>Portfolio</h1>
-</div>
-<div id="resume">
-  <h1>Resumé</h1>
-  <div style="float:left;"><%= link_to "Resume as PDF", "https://docs.google.com/document/d/1t4UzcwONPlV3QGt3Yt4E8xHt_7jP225KjqqebL--3tE/export?format=pdf" %></div>
-  <div style="float:right;"><%= link_to "Resume as Word Document", "https://docs.google.com/document/d/1t4UzcwONPlV3QGt3Yt4E8xHt_7jP225KjqqebL--3tE/export?format=doc" %></div>
-</div>
 --!>
