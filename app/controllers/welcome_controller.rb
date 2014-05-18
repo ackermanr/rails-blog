@@ -1,8 +1,8 @@
 class WelcomeController < ApplicationController
   def index
     Octokit.configure do |c|
-      c.login = 'ackermanr'
-      c.password = 'asterisk1'
+      c.login = 'username'
+      c.password = 'password'
     end
 
     user = Octokit.user 'ackermanr'
