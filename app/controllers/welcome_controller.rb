@@ -1,5 +1,13 @@
 class WelcomeController < ApplicationController
   def index
+    Octokit.configure do |c|
+      c.login = 'ackermanr'
+      c.password = 'asterisk1'
+    end
+
+    user = Octokit.user 'ackermanr'
+    @repos = user.rels[:repos].get.data
+
   end
 
   def message

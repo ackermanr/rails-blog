@@ -40,3 +40,6 @@ gem 'bcrypt', :require => 'bcrypt'
 
 # SEO Helper
 gem 'meta-tags'
+
+# Github API
+gem "octokit", "~> 3.0"
