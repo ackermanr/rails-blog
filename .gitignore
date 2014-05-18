@@ -17,3 +17,4 @@
 
 /config/secrets.yaml
 /config/environments/production.rb
+/config/environment_variables.yml
