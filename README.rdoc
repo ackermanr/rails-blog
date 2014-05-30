@@ -6,7 +6,7 @@ Details:
 
 * Developed in Rails v 4.1
 * Includes a blog with comments, user management and encrypted authentication using BCrypt.
-** Blog now contains syntax highlighting via the CodeRay gem
+- Blog now contains syntax highlighting via the CodeRay gem
 * Includes a Mailer to alert me when someone is interested in contacting me
 
 Will be adding onto the project and the README as more functionality gets added!
