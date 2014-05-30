@@ -46,3 +46,6 @@ gem "octokit", "~> 3.0"
 
 # Paginate gem
 gem 'will_paginate', '~> 3.0'
+
+# Coderay - Syntax Highlighter
+gem 'coderay'
