@@ -1,5 +1,16 @@
 class ArticlesController < ApplicationController
 
+before_filter :login_required, :only=>['new', 'update', 'edit', 'destroy']
+
+def login_required
+    if session[:user]
+      return true
+    end
+    flash[:warning]='Please login to continue'
+    redirect_to :controller => "articles", :action => "index"
+    return false 
+  end
+
 def new
   @article = Article.new
 end
