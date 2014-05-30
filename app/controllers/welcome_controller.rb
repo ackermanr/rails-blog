@@ -1,12 +1,12 @@
 class WelcomeController < ApplicationController
   def index
     Octokit.configure do |c|
-      c.login = 'username'
-      c.password = 'password'
+      c.login = ENV["github_username"] 
+      c.password = ENV["github_pass"]
     end
 
     user = Octokit.user 'ackermanr'
-    @repos = user.rels[:repos].get.data
+    @events = user.rels[:events].get.data
 
   end
 

@@ -1,12 +1,9 @@
+<%= render 'welcome/border' %>
 <%= render 'users' %>
-<h1>Listing articles</h1>
- 
-<table>
-  <tr>
-    <th>Title</th>
-  </tr>
- 
-  <% @articles.each do |article| %>
-    <%= render partial: 'articlewidget', :locals  => { :article => article } %>
-  <% end %>
-</table>
+<%= link_to(root_path) do %>
+  <div id="home-button"> <- Home</div>
+<% end %>
+
+<div class="container" id="alt_container">
+  <%= render 'article' %>
+</div>

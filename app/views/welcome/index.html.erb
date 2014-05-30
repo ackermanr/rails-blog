@@ -1,11 +1,5 @@
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-<link rel="stylesheet" href="/assets/github-activity.css" />
-<script type="text/javascript" src="/assets/github-activity.js"></script>
-
 <%= render 'border' %>
 <div class="container">
-  <%= render 'github' %>
   <%= link_to('about') do %>
     <div class="nav-square first"><h1>About Me</h1></div>
   <% end %>
@@ -15,6 +9,7 @@
   <%= link_to('portfolio') do %>
     <div class="nav-square bottom first"><h1>Portfolio</h1></div>
   <% end %>
+  <%= link_to('blog') do %>
   <div class="nav-square bottom"><h1>Blog</h1></div>
-
+  <% end %>
 </div>

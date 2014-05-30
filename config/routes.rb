@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get "about" => "about_me#index", :as => "about"
   get "contact" => "contact#index", :as => "contact"
   get "portfolio" => "portfolio#index", :as => "portfolio"
+  get "blog" => "articles#index", :as => "blog"
+  get "blog/contents" => "articles#contents", :as => "blog/contents"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -19,7 +21,7 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
-  resources :articles do
+  resources :articles, :path => "blog" do
     resources :comments
   end
   resources :users

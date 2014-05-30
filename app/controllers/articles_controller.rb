@@ -33,6 +33,10 @@ def update
 end
 
 def index
+  @articles = Article.all.paginate(:page => params[:page], :per_page => 1).order('created_at DESC')
+end
+
+def contents
   @articles = Article.all
 end
 

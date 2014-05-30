@@ -33,7 +33,7 @@ gem 'bcrypt', :require => 'bcrypt'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+ gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
@@ -43,3 +43,6 @@ gem 'meta-tags'
 
 # Github API
 gem "octokit", "~> 3.0"
+
+# Paginate gem
+gem 'will_paginate', '~> 3.0'
