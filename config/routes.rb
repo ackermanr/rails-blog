@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'welcome/index'
   post "message" => "welcome#message", :as => "message", :via => :post
-  get "sign_up" => "users#new", :as => "sign_up"
   get "log_in" => "sessions#new", :as => "log_in"
   get "log_out" => "sessions#destroy", :as => "log_out"
   get "about" => "about_me#index", :as => "about"
