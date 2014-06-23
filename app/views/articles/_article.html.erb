@@ -1,0 +1,12 @@
+<% @articles.each do |article| %>
+  <div class="article" id="article-<%= article.id%>">
+    <div class="article_title">
+      <h1><%= article.title %></h1>
+      <% if current_user %>
+        <%= link_to "Edit", edit_article_path(article.id) %> 
+      <% end %>
+    </div>
+    <div class="article_body"><%= raw coderay(article.text) %></div>
+  </div>
+<% end %>
+<%= will_paginate @articles %>
