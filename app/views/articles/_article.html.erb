@@ -1,4 +1,8 @@
+<% set_meta_tags :author => "https://plus.google.com/+RCAckerman" %>
 <% @articles.each do |article| %>
+  <% set_meta_tags :title => article.seo_title %>
+  <% set_meta_tags :description => article.seo_desc %>
+  <% set_meta_tags :keywords => article.seo_keys %>
   <div class="article" id="article-<%= article.id%>">
     <div class="article_title">
       <h1><%= article.title %></h1>

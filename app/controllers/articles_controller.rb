@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
 before_filter :login_required, :only=>['new', 'update', 'edit', 'destroy']
 
 def login_required
-    if session[:user]
+    if session[:user_id]
       return true
     end
     flash[:warning]='Please login to continue'
@@ -37,7 +37,7 @@ def update
   @article = Article.find(params[:id])
 
   if @article.update(article_params)
-    redirect_to @article
+    redirect_to articles_path 
   else
     render 'edit'
   end
@@ -60,7 +60,7 @@ end
 
 private
   def article_params
-    params.require(:article).permit(:title, :text)
+    params.require(:article).permit(:title, :text, :seo_title, :seo_desc, :seo_keys)
   end
 
 end
