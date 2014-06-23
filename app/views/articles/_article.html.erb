@@ -7,7 +7,8 @@
     <div class="article_title">
       <h1><%= article.title %></h1>
       <% if current_user %>
-        <%= link_to "Edit", edit_article_path(article.id) %> 
+        <%= link_to "Edit", edit_article_path(article.id) %><br />
+        <%= button_to "delete", article, :method=>:delete, :class=>:destroy %>
       <% end %>
     </div>
     <hr />
