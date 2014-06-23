@@ -6,6 +6,7 @@
         <%= link_to "Edit", edit_article_path(article.id) %> 
       <% end %>
     </div>
+    <hr />
     <div class="article_body"><%= raw coderay(article.text) %></div>
   </div>
 <% end %>
