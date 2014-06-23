@@ -1,3 +1,9 @@
+<%= render 'welcome/border' %>
+<%= link_to(root_path) do %>
+  <div id="home-button"> <- Home</div>
+<% end %>
+
+<div id="alt_container">
 <h1>Log In</h1>
 
 <%= form_tag sessions_path do %>
@@ -9,5 +15,6 @@
     <%= label_tag :password %><br />
     <%= password_field_tag :password %>
   </p>
-  <p class="button"><%= submit_tag %></p>
+  <p class="button" style="margin-top:15px;"><%= submit_tag "Log In" %></p>
 <% end %>
+</div>
