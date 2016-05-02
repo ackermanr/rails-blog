@@ -1,12 +1,13 @@
 server 'rcackerman.com', roles: [:web, :app, :db], primary: true, user: 'rc'
 
-set :repo_url,        'git@example.com:ackermanr/rails-blog.git'
+set :repo_url,        'git@github.com:ackermanr/rails-blog.git'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
 # Don't change these unless you know what you're doing
 set :pty,             true
 set :use_sudo,        false
+set :user,            'rc'
 set :stage,           :production
 set :deploy_via,      :remote_cache
 set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
@@ -40,7 +41,7 @@ namespace :puma do
     end
   end
 
-  before :start, :make_dirs
+  # before :start, :make_dirs
 end
 
 namespace :deploy do
