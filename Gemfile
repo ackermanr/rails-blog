@@ -34,8 +34,11 @@ gem 'bcrypt', :require => 'bcrypt'
 
 # Use Capistrano for deployment
  gem 'capistrano'
- gem 'capistrano-bundler'
- gem 'capistrano-rvm'
+ gem 'capistrano-bundler', require: false
+ gem 'capistrano-rails', require: false
+ gem 'capistrano-rvm', require: false
+ gem 'capistrano-rbenv', github: 'capistrano/rbenv', require: false
+ gem 'capistrano-puma', require: false
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
