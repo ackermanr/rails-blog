@@ -33,7 +33,9 @@ gem 'bcrypt', :require => 'bcrypt'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
- gem 'capistrano', group: :development
+ gem 'capistrano'
+ gem 'capistrano-bundler'
+ gem 'capistrano-rvm'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
@@ -49,3 +51,5 @@ gem 'will_paginate', '~> 3.0'
 
 # Coderay - Syntax Highlighter
 gem 'coderay'
+
+gem 'puma'
